@@ -1,0 +1,25 @@
+body::-webkit-scrollbar { width: 8px; }
+body::-webkit-scrollbar-track { background: transparent; }
+body::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 10px; }
+
+.fw-400 { font-weight: 400; }
+.fw-500 { font-weight: 500; }
+.fw-600 { font-weight: 600; }
+.fw-700 { font-weight: 700; }
+
+.button-box{
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: FontBold;
+    font-size: 16px;
+    padding: 18px 36px;
+}
+.button-box-primary{
+    background-color: #33A6F2;
+    color: #FFFFFF;
+}
+.button-box-big{
+    font-size: 20px !important;
+    padding: 23px 50px !important;
+}

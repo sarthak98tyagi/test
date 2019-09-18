@@ -1,0 +1,94 @@
+.the-left-scrolling-bar-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.the-left-scrolling-bar{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.the-tagline {
+    min-width: 700px;
+    margin-left: 200px;
+    align-self: center;
+}
+.the-tagline p{
+    margin-bottom: 0;
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.stories{
+    align-self: center;
+    display: flex;
+}
+.stories .column{
+    min-width: 225px;
+    max-width: 225px;
+    margin-right: 75px;
+    position: relative;
+}
+.stories .column .person:last-child{
+    margin-top: 55px;
+}
+.stories .column .person .person-image img{
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    filter: brightness(70%);
+    transition: all 0.3s ease-out;
+}
+.stories .column .person p{
+    text-align: center;
+    color: white !important;
+}
+.stories .column a:hover {
+    text-decoration: none !important;
+}
+.stories .column a:hover .person-image img{
+    transition: all 0.3s ease-out;
+    box-shadow: 0 0 150px #33A6F2;
+    filter: brightness(120%);
+}
+
+@media only screen and (max-width: 992px) {
+    .the-left-scrolling-bar-container{
+    position: static;
+    height: auto;
+    overflow: visible;
+    }
+    .the-left-scrolling-bar {
+        flex-direction: column;
+    }
+
+    .the-tagline {
+        min-width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        padding: 150px 8px;
+        align-self: flex-start;
+        text-align: center;
+    }
+    .the-tagline p {
+        font-size: 44px;
+    }
+    .the-tagline h4 {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .stories {
+        flex-direction: column;
+    }
+    .stories .column {
+        align-self: center;
+        margin: 55px auto 0 auto;
+        position: static;
+    }
+}
